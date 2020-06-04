@@ -1,0 +1,14 @@
+easy_admin:
+    entities:
+        Employee:
+            class: App\Entity\Employee
+            list:
+                fields: ['id', 'firstName', 'lastName', 'email', 'category', 'parent', 'employees', 'employeesCount']
+        Category:
+            class: App\Entity\Category
+        User:
+            class: App\Entity\User
+
+    user:
+        name_property_path: 'email'
+
